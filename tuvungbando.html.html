@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#081627">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>La Bàn Từ Vựng — 68 Từ Chỉ Phương Hướng IELTS Listening | N.D.N · PoPoDoo</title>
+<style>
+:root{
+  --ink:#081627; --panel:#0F2440; --panel2:#122B4C; --line:#1E3A5C; --line2:#2C4C74;
+  --gold:#E4B34A; --gold2:#F3D68B; --ivory:#F2EBDB; --mut:#8FAACB; --mut2:#5F7FA6;
+  --amber:#E2704A; --teal:#2E6377; --green:#8FBF6E;
+  --disp:'Iowan Old Style','Palatino Linotype','Book Antiqua','Times New Roman',serif;
+  --body:'Times New Roman',Times,serif;
+  --mono:'SF Mono','Cascadia Code','Consolas',ui-monospace,monospace;
+  --fs:1;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+button{touch-action:manipulation}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink); color:var(--ivory); font-family:var(--body);
+  background-image:
+    radial-gradient(ellipse 90% 60% at 15% -10%, rgba(30,58,92,.55), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 95% 15%, rgba(228,179,74,.06), transparent 55%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='560' viewBox='0 0 560 560'%3E%3Cg fill='none' stroke='%23142c4c' stroke-width='1'%3E%3Cpath d='M60 500c90-120 30-200 120-260s220-10 260-120'/%3E%3Cpath d='M40 520c110-130 40-230 140-290s250-20 300-140'/%3E%3Cpath d='M20 545c130-145 55-260 165-325S475 190 535 55'/%3E%3Ccircle cx='430' cy='430' r='40'/%3E%3Ccircle cx='430' cy='430' r='70'/%3E%3Ccircle cx='430' cy='430' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment:fixed;
+  min-height:100vh;
+}
+@media (max-width:860px){
+  body{background-attachment:scroll}
+}
+::selection{background:var(--gold);color:var(--ink)}
+
+/* ======= HEADER / HERO ======= */
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:14px 28px;border-bottom:1px solid var(--line);
+  background:rgba(8,22,39,.85);backdrop-filter:blur(8px);
+  position:sticky;top:0;z-index:60;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{
+  width:38px;height:38px;border:1.5px solid var(--gold);border-radius:50%;
+  display:grid;place-items:center;color:var(--gold);font-family:var(--disp);
+  font-size:13px;font-weight:700;letter-spacing:.5px;
+  box-shadow:0 0 0 3px rgba(228,179,74,.12);
+}
+.brand-name{font-family:var(--disp);font-size:15px;letter-spacing:1px;color:var(--ivory)}
+.brand-name small{display:block;font-size:11px;color:var(--mut);letter-spacing:2px;font-family:var(--mono)}
+.font-ctrl{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;color:var(--mut)}
+.font-ctrl button{
+  width:30px;height:30px;border-radius:8px;border:1px solid var(--line2);
+  background:var(--panel);color:var(--gold2);font-size:15px;cursor:pointer;
+  transition:.2s;font-family:var(--disp);
+}
+.font-ctrl button:hover{border-color:var(--gold);transform:translateY(-1px)}
+.font-ctrl button:focus-visible,.tab:focus-visible,.spk:focus-visible,.search input:focus-visible{
+  outline:2px solid var(--gold);outline-offset:2px;
+}
+
+.hero{
+  display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;
+  max-width:1180px;margin:0 auto;padding:64px 28px 40px;
+}
+.eyebrow{
+  font-family:var(--mono);font-size:11px;letter-spacing:4px;color:var(--gold);
+  text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:18px;
+}
+.eyebrow::before{content:'';width:36px;height:1px;background:var(--gold)}
+h1{
+  font-family:var(--disp);font-weight:600;font-size:clamp(34px,5vw,58px);
+  line-height:1.06;letter-spacing:.5px;margin-bottom:6px;
+}
+h1 em{font-style:italic;color:var(--gold2)}
+.sub{color:var(--mut);font-size:17px;line-height:1.6;max-width:520px;margin-top:14px}
+.stats{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.chip{
+  border:1px solid var(--line2);border-radius:999px;padding:7px 16px;
+  font-family:var(--mono);font-size:12px;color:var(--gold2);background:rgba(15,36,64,.6);
+  letter-spacing:.5px;
+}
+.hero-compass{width:min(300px,60vw)}
+
+/* ======= TABS ======= */
+.tabs-wrap{
+  position:sticky;top:67px;z-index:50;background:rgba(8,22,39,.92);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  padding:12px 28px;
+}
+.tabs-inner{max-width:1180px;margin:0 auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tab{
+  border:1px solid var(--line2);background:transparent;color:var(--mut);
+  font-family:var(--body);font-size:14px;padding:8px 15px;border-radius:999px;
+  cursor:pointer;transition:.2s;letter-spacing:.3px;
+}
+.tab .n{font-family:var(--mono);font-size:10.5px;color:var(--mut2);margin-left:5px}
+.tab:hover{color:var(--ivory);border-color:var(--gold)}
+.tab.on{background:var(--gold);border-color:var(--gold);color:var(--ink);font-weight:700}
+.tab.on .n{color:rgba(8,22,39,.65)}
+.tab.t7.on{background:var(--amber);border-color:var(--amber)}
+.search{margin-left:auto;position:relative}
+.search input{
+  background:var(--panel);border:1px solid var(--line2);border-radius:999px;
+  color:var(--ivory);font-family:var(--body);font-size:14px;
+  padding:8px 16px 8px 34px;width:200px;transition:.25s;
+}
+.search input:focus{width:250px;border-color:var(--gold)}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);opacity:.5}
+
+/* ======= GRID / CARDS ======= */
+main{max-width:1180px;margin:0 auto;padding:34px 28px 60px}
+.gtitle{
+  font-family:var(--disp);font-size:23px;color:var(--gold2);letter-spacing:.5px;
+  margin:38px 0 6px;display:flex;align-items:baseline;gap:14px;
+}
+.gtitle:first-child{margin-top:6px}
+.gtitle .co{font-family:var(--mono);font-size:12px;color:var(--mut2);letter-spacing:2px}
+.gsub{color:var(--mut);font-size:14.5px;margin-bottom:18px}
+.gtitle.warn{color:var(--amber)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(252px,1fr));gap:16px}
+.card{
+  background:linear-gradient(180deg,var(--panel2),var(--panel));
+  border:1px solid var(--line);border-radius:15px;overflow:hidden;
+  transition:transform .3s cubic-bezier(.2,.8,.3,1),border-color .3s,box-shadow .3s,opacity .5s,translate .5s;
+  opacity:0;translate:0 22px;position:relative;
+}
+.card.in{opacity:1;translate:0 0}
+.card:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 14px 34px -14px rgba(0,0,0,.7),0 0 0 1px rgba(228,179,74,.25)}
+.card.g7:hover{border-color:var(--amber);box-shadow:0 14px 34px -14px rgba(0,0,0,.7),0 0 0 1px rgba(226,112,74,.3)}
+.map{background:#0B1E36;border-bottom:1px solid var(--line);position:relative}
+.map svg{display:block;width:100%;height:auto}
+.coord{
+  position:absolute;top:9px;left:11px;font-family:var(--mono);font-size:10px;
+  letter-spacing:1.5px;color:var(--gold);background:rgba(8,22,39,.75);
+  border:1px solid rgba(228,179,74,.35);border-radius:5px;padding:2.5px 7px;
+}
+.g7 .coord{color:var(--amber);border-color:rgba(226,112,74,.4)}
+.tx{padding:15px 17px 17px}
+.en{
+  font-family:var(--disp);font-size:calc(17.5px*var(--fs));line-height:1.3;
+  color:var(--ivory);display:flex;justify-content:space-between;gap:8px;align-items:flex-start;
+}
+.ipa{font-family:'Charis SIL','Doulos SIL','Times New Roman',var(--body);font-size:calc(13.5px*var(--fs));color:var(--mut);margin-top:4px;letter-spacing:.3px}
+.vi{color:var(--gold2);font-size:calc(15px*var(--fs));margin-top:6px;line-height:1.45}
+.spk{
+  flex:none;width:29px;height:29px;border-radius:8px;border:1px solid var(--line2);
+  background:transparent;color:var(--mut);cursor:pointer;display:grid;place-items:center;transition:.2s;
+}
+.spk:hover{color:var(--gold);border-color:var(--gold)}
+.spk.on{color:var(--ink);background:var(--gold);border-color:var(--gold)}
+.hidden{display:none!important}
+.empty{
+  text-align:center;color:var(--mut);padding:70px 0;font-size:16px;
+  font-style:italic;display:none;
+}
+
+/* ======= FOOTER ======= */
+footer{
+  border-top:1px solid var(--line);padding:30px 28px;text-align:center;
+  color:var(--mut);font-size:14px;
+}
+footer .fb{font-family:var(--disp);color:var(--gold);font-size:16px;letter-spacing:2px;margin-bottom:6px}
+footer .fm{font-family:var(--mono);font-size:11.5px;letter-spacing:1.5px;color:var(--mut2)}
+
+/* ======= SVG INTERNALS ======= */
+.g line{stroke:#152C4B;stroke-width:.55}
+.fr{fill:none;stroke:#3A5A80;stroke-width:1.5}
+.b{fill:#1B3757;stroke:#4C7099;stroke-width:1}
+.bt{fill:#A7C2DD;font:700 6.3px var(--mono);text-anchor:middle;letter-spacing:.6px}
+.lbl{fill:#7FA3C8;font:700 7px var(--mono);text-anchor:middle;letter-spacing:1px}
+.lblG{fill:var(--gold2);font:700 8px var(--mono);text-anchor:middle}
+.rd{fill:#152E4B;stroke:#31527A;stroke-width:1}
+.rdl{stroke:#26466C;stroke-width:11;stroke-linecap:round;fill:none}
+.rdc{stroke:#48688F;stroke-width:1;stroke-dasharray:4 4;fill:none}
+.wall{fill:#25476B;stroke:#4C7099;stroke-width:1}
+.w{fill:#14384A;stroke:#2E6377;stroke-width:1}
+.wl{stroke:#2E6377;stroke-width:1;fill:none}
+.grn{fill:#1D3A2C;stroke:#3E6B4F;stroke-width:1}
+.brg{fill:#3A5A80;stroke:#8FB0D2;stroke-width:1}
+.dash{stroke:#7FA3C8;stroke-width:1.1;stroke-dasharray:3 3;fill:none}
+.r{stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:100;stroke-dashoffset:100;animation:draw var(--dur,4s) ease-in-out infinite}
+.d{fill:var(--gold2);stroke:rgba(228,179,74,.35);stroke-width:4.5}
+.pr{fill:none;stroke:var(--gold);stroke-width:1.4;transform-box:fill-box;transform-origin:center;animation:ping 2.1s ease-out infinite}
+.pc{fill:var(--gold)}
+.g7 .pr{stroke:var(--amber)}
+.g7 .pc{fill:var(--amber)}
+.ghostpin .pr{stroke-dasharray:3 2;animation:blink 2.4s infinite}
+.ghostpin .pc{fill:none;stroke:var(--gold);stroke-width:1.2;stroke-dasharray:2 2}
+.g7 .ghostpin .pc{stroke:var(--amber)}
+.hl{fill:rgba(228,179,74,.14);stroke:rgba(228,179,74,.55);stroke-width:1;stroke-dasharray:4 3;animation:hlp 2.6s ease-in-out infinite}
+.ar{stroke:var(--gold);stroke-width:1.6;fill:none}
+.arf{fill:var(--gold)}
+.arm{stroke:#7FA3C8;stroke-width:1.3;fill:none}.armf{fill:#7FA3C8}
+.xm line{stroke:#E2654A;stroke-width:2.2;stroke-linecap:round}
+.ck{stroke:var(--green);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.ring{fill:none;stroke:var(--gold);stroke-width:1.3;transform-box:fill-box;transform-origin:center;animation:ping 2.4s ease-out infinite}
+.tk{stroke:#48688F;stroke-width:1}.tk2{stroke:var(--gold);stroke-width:1.4}
+.cl{fill:var(--gold2);font:700 8px var(--disp);text-anchor:middle}
+.cring{fill:none;stroke:#3A5A80;stroke-width:1.4}
+.cring2{fill:none;stroke:#26466C;stroke-width:1}
+.nN{fill:var(--gold)}.nS{fill:#4C7099}.nH{fill:var(--ivory);stroke:var(--gold);stroke-width:1}
+.oldp{animation:fadeOld 5s ease-in-out infinite}
+.newp{animation:riseNew 5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.late{animation:riseNew 5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.sway{transform-box:fill-box;transform-origin:60px 78px;animation:sway 4s ease-in-out infinite}
+.qm{fill:var(--gold2);font:700 11px var(--disp);text-anchor:middle}
+.you{fill:var(--gold2);font:700 6.5px var(--mono);text-anchor:middle;letter-spacing:1px}
+
+@keyframes draw{0%{stroke-dashoffset:100}62%{stroke-dashoffset:0}100%{stroke-dashoffset:0}}
+@keyframes ping{0%{transform:scale(.45);opacity:1}75%,100%{transform:scale(1.9);opacity:0}}
+@keyframes hlp{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes fadeOld{0%,28%{opacity:1}55%,100%{opacity:.18}}
+@keyframes riseNew{0%,45%{opacity:0;transform:scale(.4)}68%,100%{opacity:1;transform:scale(1)}}
+@keyframes sway{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2.5deg)}}
+@keyframes spinNeedle{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.hero-needle{transform-box:fill-box;transform-origin:center;animation:spinNeedle 26s linear infinite}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important}
+  .r{stroke-dashoffset:0}
+  .card{opacity:1;translate:0 0}
+  .pr,.ring{opacity:.6}
+  .oldp{opacity:.25}.newp,.late{opacity:1}
+}
+.tab,.spk,.font-ctrl button{cursor:pointer;-webkit-user-select:none;user-select:none;touch-action:manipulation}
+@media (max-width:860px){
+  .topbar{position:static;padding:12px 16px;background:var(--ink);backdrop-filter:none}
+  .tabs-wrap{background:#0A1A30;backdrop-filter:none}
+  .brand-name{font-size:13.5px}
+  .brand-name small{font-size:10px}
+  .font-ctrl button{width:38px;height:38px}
+  .hero{grid-template-columns:1fr;padding:36px 18px 28px;gap:22px}
+  .hero-compass{margin:0 auto;width:min(240px,64vw)}
+  .sub{font-size:15.5px}
+  .stats{gap:8px}
+  .chip{padding:6px 12px;font-size:11px}
+  /* Tabs: sticky strip with horizontal swipe */
+  .tabs-wrap{position:sticky;top:0;padding:10px 0 10px 16px}
+  .tabs-inner{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;padding-right:16px;gap:7px}
+  .tabs-inner::-webkit-scrollbar{display:none}
+  .tab{flex:none;padding:9px 14px;font-size:13.5px}
+  .search{margin-left:0;order:-1;flex:none}
+  .search input{width:150px}
+  .search input:focus{width:180px}
+  main{padding:22px 16px 44px}
+  .grid{grid-template-columns:1fr;gap:14px}
+  .gtitle{font-size:20px;flex-wrap:wrap;gap:8px;margin-top:30px}
+  .card:hover{transform:none}
+  .card:active{transform:scale(.985)}
+  .tx{padding:14px 16px 16px}
+  .spk{width:38px;height:38px;border-radius:10px}
+  .spk svg{width:15px;height:15px}
+  footer{padding:26px 16px calc(24px + env(safe-area-inset-bottom))}
+}
+@media (min-width:480px) and (max-width:860px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark">N·D·N</div>
+    <div class="brand-name">PoPoDoo English &amp; IELTS
+      <small>0932 067 877</small>
+    </div>
+  </div>
+  <div class="font-ctrl">
+    Cỡ chữ
+    <button id="fMinus" aria-label="Giảm cỡ chữ">A−</button>
+    <button id="fPlus" aria-label="Tăng cỡ chữ">A+</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="eyebrow">IELTS Listening · Part 2 · Map Labelling</div>
+    <h1>La bàn <em>từ vựng</em><br>chỉ phương hướng</h1>
+    <p class="sub">68 từ &amp; cụm từ chỉ phương hướng trên bản đồ — mỗi từ đi kèm một <strong>bản đồ mini chuyển động</strong> tự minh họa đúng nghĩa của nó. Di chuột lên thẻ, bấm 🔊 để nghe phát âm.</p>
+    <div class="stats">
+      <span class="chip">68 từ vựng</span>
+      <span class="chip">7 nhóm chủ đề</span>
+      <span class="chip">68 hoạt cảnh động</span>
+      <span class="chip">Phiên âm IPA</span>
+      <span class="chip">Song ngữ Anh–Việt</span>
+    </div>
+  </div>
+  <svg class="hero-compass" viewBox="0 0 220 220" aria-hidden="true">
+    <circle cx="110" cy="110" r="96" class="cring"/>
+    <circle cx="110" cy="110" r="82" class="cring2"/>
+    <circle cx="110" cy="110" r="60" class="cring2"/>
+    <g id="heroTicks"></g>
+    <g id="heroLabels"></g>
+    <g class="hero-needle">
+      <polygon points="110,32 100,110 120,110" class="nN"/>
+      <polygon points="110,188 100,110 120,110" class="nS"/>
+      <circle cx="110" cy="110" r="7" class="nH"/>
+    </g>
+  </svg>
+</section>
+
+<nav class="tabs-wrap" aria-label="Lọc theo nhóm">
+  <div class="tabs-inner" id="tabs">
+    <div class="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F2EBDB" stroke-width="2.4"><circle cx="10.5" cy="10.5" r="7"/><path d="M16 16l5.5 5.5"/></svg>
+      <input id="q" type="search" placeholder="Tìm từ vựng…" aria-label="Tìm từ vựng">
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div id="content"></div>
+  <p class="empty" id="empty">Không tìm thấy từ nào khớp — thử từ khóa khác nhé.</p>
+</main>
+
+<footer>
+  <div class="fb">N.D.N · PoPoDoo English &amp; IELTS</div>
+  <div class="fm">☎ 0932 067 877 — LA BÀN TỪ VỰNG · IELTS LISTENING MAP DIRECTIONS</div>
+  <div class="fm" style="margin-top:8px;color:var(--gold);letter-spacing:2.5px">✦ Phú Quốc · 13/7/2026 ✦</div>
+</footer>
+
+<script>
+"use strict";
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const A = s => RM ? '' : s;
+
+/* ============ SVG helper library ============ */
+function G(){
+  let s='';
+  for(let x=0;x<=120;x+=15) s+=`<line x1="${x}" y1="0" x2="${x}" y2="90"/>`;
+  for(let y=0;y<=90;y+=15) s+=`<line x1="0" y1="${y}" x2="120" y2="${y}"/>`;
+  return `<g class="g">${s}</g>`;
+}
+const demo = inner => `<svg viewBox="0 0 120 90" role="img" aria-hidden="true">${G()}${inner}</svg>`;
+const blk = (x,y,w,h,t='') => `<rect class="b" x="${x}" y="${y}" width="${w}" height="${h}" rx="2"/>${t?`<text class="bt" x="${x+w/2}" y="${y+h/2+2.4}">${t}</text>`:''}`;
+const frame = (x=10,y=8,w=100,h=74) => `<rect class="fr" x="${x}" y="${y}" width="${w}" height="${h}" rx="3"/>`;
+const route = (d,dur=4,dl=0) => `<path class="r" d="${d}" pathLength="100" style="--dur:${dur}s;animation-delay:${dl}s"/>`;
+function dot(d,dur=4,dl=0,r=3){
+  const m=d.match(/M\s*([-\d.]+)[ ,]+([-\d.]+)/);
+  if(RM) return `<circle class="d" r="${r}" cx="${m?m[1]:60}" cy="${m?m[2]:45}"/>`;
+  return `<circle class="d" r="${r}"><animateMotion dur="${dur}s" begin="${dl}s" repeatCount="indefinite" path="${d}"/></circle>`;
+}
+const pin = (x,y,cls='') => `<g class="pin ${cls}" transform="translate(${x},${y})"><circle r="7.5" class="pr"/><circle r="3.2" class="pc"/></g>`;
+const gpin = (x,y) => `<g class="pin ghostpin" transform="translate(${x},${y})"><circle r="7.5" class="pr"/><circle r="3.2" class="pc"/></g>`;
+const reg = (x,y,w,h) => `<rect class="hl" x="${x}" y="${y}" width="${w}" height="${h}" rx="2"/>`;
+function arw(x1,y1,x2,y2,cls='ar'){
+  const a=Math.atan2(y2-y1,x2-x1), p=(o,l)=>`${(x2-Math.cos(a+o)*l).toFixed(1)},${(y2-Math.sin(a+o)*l).toFixed(1)}`;
+  return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" class="${cls}"/><polygon points="${x2},${y2} ${p(.42,6.5)} ${p(-.42,6.5)}" class="${cls==='ar'?'arf':'armf'}"/>`;
+}
+const X = (x,y,s=4.5) => `<g class="xm" transform="translate(${x},${y})"><line x1="${-s}" y1="${-s}" x2="${s}" y2="${s}"/><line x1="${s}" y1="${-s}" x2="${-s}" y2="${s}"/></g>`;
+const CK = (x,y) => `<path class="ck" d="M${x-5},${y} l3.5,4 l7,-8"/>`;
+const RING = (x,y,dl=0) => `<circle class="ring" cx="${x}" cy="${y}" r="8" style="animation-delay:${dl}s"/>`;
+const waves = (x,y,w,n=3) => { let s=''; for(let i=0;i<n;i++){const yy=y+i*7; s+=`<path class="wl" d="M${x},${yy} q6,-3 12,0 t12,0 t12,0 t12,0"/>`;} return s; };
+
+function compass(ang){
+  const c=60, cy=45, r=29; let ticks='';
+  for(let i=0;i<16;i++){
+    const a=i*22.5*Math.PI/180, r1=i%4===0?r-6.5:r-3.5;
+    ticks+=`<line class="tk${i%4===0?' tk2':''}" x1="${(c+Math.sin(a)*r1).toFixed(1)}" y1="${(cy-Math.cos(a)*r1).toFixed(1)}" x2="${(c+Math.sin(a)*r).toFixed(1)}" y2="${(cy-Math.cos(a)*r).toFixed(1)}"/>`;
+  }
+  const L=[['N',0],['E',90],['S',180],['W',270]].map(([t,a])=>{
+    const ra=a*Math.PI/180;
+    return `<text class="cl" x="${(c+Math.sin(ra)*(r+7)).toFixed(1)}" y="${(cy-Math.cos(ra)*(r+7)+2.8).toFixed(1)}">${t}</text>`;
+  }).join('');
+  return `<circle cx="${c}" cy="${cy}" r="${r}" class="cring"/><circle cx="${c}" cy="${cy}" r="${r-9}" class="cring2"/>${ticks}${L}
+  <g transform="rotate(${ang} ${c} ${cy})">
+    <polygon points="${c},${cy-r+9} ${c-4},${cy} ${c+4},${cy}" class="nN"/>
+    <polygon points="${c},${cy+r-9} ${c-4},${cy} ${c+4},${cy}" class="nS"/>
+    <circle cx="${c}" cy="${cy}" r="3" class="nH"/>
+    ${A(`<animateTransform attributeName="transform" type="rotate" values="0 ${c} ${cy}; ${ang+10} ${c} ${cy}; ${ang-5} ${c} ${cy}; ${ang} ${c} ${cy}" keyTimes="0;0.45;0.7;1" dur="3.4s" repeatCount="indefinite"/>`)}
+  </g>`;
+}
+
+/* ============ Groups ============ */
+const GROUPS = {
+  1:{name:'Phương hướng la bàn',en:'Compass directions',sub:'8 hướng cơ bản trên la bàn — kim chỉ đúng hướng của từng từ.'},
+  2:{name:'Cụm từ la bàn mở rộng',en:'Extended compass phrases',sub:'Cách người bản xứ mô tả khu vực và ranh giới theo hướng la bàn.'},
+  3:{name:'Điểm neo xuất phát',en:'Anchor points',sub:'Câu "neo" mở đầu recording — bỏ lỡ là lạc toàn bộ bản đồ.'},
+  4:{name:'Di chuyển & chỉ đường',en:'Movement & route language',sub:'Xương sống của Part 2 — theo dõi chấm vàng di chuyển đúng nghĩa từng cụm từ.'},
+  5:{name:'Vị trí tương đối',en:'Relative position',sub:'Nơi đáp án được "đặt" trên bản đồ — pin vàng chính là vị trí cần khoanh.'},
+  6:{name:'Giao lộ & điểm mốc',en:'Junctions & landmarks',sub:'Các điểm mốc quan trọng dùng để định vị trong recording.'},
+  7:{name:'Tín hiệu bẫy',en:'Distractor signals',sub:'⚠ Bí mật người ra đề: các cấu trúc dẫn bạn đến đáp án sai rồi mới sửa lại.'}
+};
+
+/* ============ 68 items ============ */
+const ITEMS = [
+/* ---- G1: compass ---- */
+{g:1,en:'north',vi:'phía bắc',d:()=>compass(0)},
+{g:1,en:'south',vi:'phía nam',d:()=>compass(180)},
+{g:1,en:'east',vi:'phía đông',d:()=>compass(90)},
+{g:1,en:'west',vi:'phía tây',d:()=>compass(-90)},
+{g:1,en:'northeast',vi:'đông bắc',d:()=>compass(45)},
+{g:1,en:'northwest',vi:'tây bắc',d:()=>compass(-45)},
+{g:1,en:'southeast',vi:'đông nam',d:()=>compass(135)},
+{g:1,en:'southwest',vi:'tây nam',d:()=>compass(-135)},
+
+/* ---- G2: extended compass ---- */
+{g:2,en:'in the north of…',vi:'ở phía bắc của (bên trong khu vực)',d:()=>frame()+reg(12,10,96,26)+`<text class="lbl" x="60" y="80">MAP</text>`+pin(60,22)},
+{g:2,en:'to the north of…',vi:'về phía bắc của (bên ngoài khu vực)',d:()=>frame(24,40,72,42)+`<text class="lbl" x="60" y="64">MAP</text>`+arw(60,38,60,26)+pin(60,15)},
+{g:2,en:'in the northern section',vi:'ở khu vực phía bắc',d:()=>frame()+reg(12,10,96,20)+`<text class="lblG" x="60" y="23">N</text>`+pin(88,20)},
+{g:2,en:'at the southern end',vi:'ở đầu phía nam',d:()=>frame()+reg(12,60,96,20)+`<text class="lblG" x="60" y="73">S</text>`+pin(32,70)},
+{g:2,en:'the westernmost building',vi:'tòa nhà xa nhất về phía tây',d:()=>blk(14,38,22,20)+blk(50,38,22,20)+blk(86,38,22,20)+arw(44,20,30,20,'arm')+`<text class="lbl" x="60" y="16">W ←</text>`+pin(25,32)},
+{g:2,en:'due north',vi:'thẳng hướng chính bắc',d:()=>compass(0)+`<line class="dash" x1="60" y1="42" x2="60" y2="6"/>`},
+
+/* ---- G3: anchors ---- */
+{g:3,en:'as you come in / as you enter',vi:'khi bạn bước vào',d:()=>`<rect class="wall" x="8" y="64" width="38" height="6"/><rect class="wall" x="74" y="64" width="38" height="6"/><path class="dash" d="M46,64 A21,21 0 0 1 67,43"/>`+route('M60,88 L60,26',3.4)+dot('M60,88 L60,26',3.4)},
+{g:3,en:'at the entrance / by the main entrance',vi:'ở lối vào / cạnh lối vào chính',d:()=>`<rect class="wall" x="8" y="50" width="36" height="6"/><rect class="wall" x="76" y="50" width="36" height="6"/>`+`<text class="lbl" x="60" y="24">ENTRANCE</text>`+pin(60,52)},
+{g:3,en:"from where you're standing",vi:'từ vị trí bạn đang đứng',d:()=>RING(60,42,0)+RING(60,42,.8)+RING(60,42,1.6)+`<circle class="d" cx="60" cy="42" r="3.4"/><text class="you" x="60" y="70">BẠN Ở ĐÂY</text>`},
+{g:3,en:'starting from the reception / car park',vi:'bắt đầu từ quầy lễ tân / bãi đỗ xe',d:()=>blk(10,32,28,26,'R')+route('M38,45 L106,45',3.6)+dot('M38,45 L106,45',3.6)},
+
+/* ---- G4: movement ---- */
+{g:4,en:'go straight ahead / carry straight on',vi:'đi thẳng',d:()=>route('M10,45 L106,45',3.4)+dot('M10,45 L106,45',3.4)+`<polygon class="arf" points="112,45 104,41 104,49"/>`},
+{g:4,en:'turn left / turn right',vi:'rẽ trái / rẽ phải',d:()=>route('M60,85 L60,45 L18,45',3.8)+dot('M60,85 L60,45 L18,45',3.8)+`<polygon class="arf" points="12,45 20,41 20,49"/>`},
+{g:4,en:'take the first / second turning on the left',vi:'rẽ vào lối rẽ thứ nhất / thứ hai bên trái',d:()=>`<path class="rdl" d="M8,72 L112,72"/><path class="rdl" d="M45,72 L45,16"/><path class="rdl" d="M85,72 L85,16"/><text class="lbl" x="45" y="10">1</text><text class="lblG" x="85" y="10">2</text>`+route('M8,72 L85,72 L85,20',4.4)+dot('M8,72 L85,72 L85,20',4.4)+CK(97,20)},
+{g:4,en:'go past / walk past',vi:'đi ngang qua',d:()=>blk(48,26,26,20,'CAFÉ')+route('M10,60 L110,60',3.8)+dot('M10,60 L110,60',3.8)},
+{g:4,en:'go along / walk along the road',vi:'đi dọc theo con đường',d:()=>`<path class="rdl" d="M8,58 C40,42 75,70 112,48"/>`+route('M8,58 C40,42 75,70 112,48',4)+dot('M8,58 C40,42 75,70 112,48',4)},
+{g:4,en:'follow the path / follow the corridor round',vi:'đi theo lối mòn / theo hành lang vòng qua',d:()=>`<path class="wall" fill="none" d="M20,86 L20,26 Q20,16 30,16 L108,16"/><path class="wall" fill="none" d="M42,86 L42,48 Q42,38 52,38 L108,38"/>`+route('M31,86 L31,38 Q31,27 41,27 L106,27',4.4)+dot('M31,86 L31,38 Q31,27 41,27 L106,27',4.4)},
+{g:4,en:'go across / cross the bridge',vi:'băng qua / qua cầu',d:()=>`<rect class="w" x="46" y="0" width="28" height="90"/>`+waves(48,14,24,10)+`<rect class="brg" x="42" y="37" width="36" height="16" rx="2"/>`+route('M10,45 L110,45',3.8)+dot('M10,45 L110,45',3.8)},
+{g:4,en:'go through the gate / double doors',vi:'đi xuyên qua cổng / cửa đôi',d:()=>`<rect class="wall" x="12" y="38" width="38" height="13"/><rect class="wall" x="70" y="38" width="38" height="13"/><line class="dash" x1="50" y1="44" x2="70" y2="44"/>`+route('M60,86 L60,8',3.6)+dot('M60,86 L60,8',3.6)},
+{g:4,en:'go around the roundabout / the lake',vi:'đi vòng qua vòng xuyến / quanh hồ',d:()=>`<ellipse class="w" cx="60" cy="45" rx="24" ry="15"/>`+waves(44,40,32,2)+route('M60,20 A36,25 0 1 1 60,70 A36,25 0 1 1 60,20',5)+dot('M60,20 A36,25 0 1 1 60,70 A36,25 0 1 1 60,20',5)},
+{g:4,en:'continue until you reach / come to…',vi:'tiếp tục đi đến khi tới…',d:()=>route('M8,78 L48,78 L48,30 L96,30',4.6)+dot('M8,78 L48,78 L48,30 L96,30',4.6)+pin(102,30,'late')},
+{g:4,en:'just beyond / a little further on',vi:'ngay phía sau đó / đi thêm một chút nữa',d:()=>blk(38,32,22,22,'B')+route('M10,68 L110,68',3.8)+dot('M10,68 L110,68',3.8)+pin(76,56)},
+{g:4,en:'clockwise',vi:'theo chiều kim đồng hồ',d:()=>`<circle class="dash" cx="60" cy="45" r="24"/>`+dot('M60,21 A24,24 0 1 1 60,69 A24,24 0 1 1 60,21',4.6)+`<polygon class="arf" points="88,40 82,48 92,49"/>`},
+{g:4,en:'anticlockwise',vi:'ngược chiều kim đồng hồ',d:()=>`<circle class="dash" cx="60" cy="45" r="24"/>`+dot('M60,21 A24,24 0 1 0 60,69 A24,24 0 1 0 60,21',4.6)+`<polygon class="arf" points="32,40 38,48 28,49"/>`},
+{g:4,en:'take a left / make a left turn',vi:'rẽ trái (cách nói khác)',d:()=>route('M95,85 L95,50 Q95,42 87,42 L20,42',4)+dot('M95,85 L95,50 Q95,42 87,42 L20,42',4)+`<polygon class="arf" points="14,42 22,38 22,46"/>`},
+
+/* ---- G5: relative position ---- */
+{g:5,en:'next to / beside / adjacent to / right by',vi:'bên cạnh / liền kề',d:()=>blk(30,32,28,26,'CAFÉ')+pin(74,45)+`<line class="dash" x1="60" y1="45" x2="66" y2="45"/>`},
+{g:5,en:'opposite / across from / facing / directly opposite',vi:'đối diện',d:()=>`<rect class="rd" x="0" y="38" width="120" height="15"/><path class="rdc" d="M0,45.5 L120,45.5"/>`+blk(44,10,32,20,'A')+blk(44,61,32,20,'B')+`<line class="dash" x1="60" y1="31" x2="60" y2="60" style="animation:hlp 2.2s infinite"/>`},
+{g:5,en:'between A and B',vi:'ở giữa A và B',d:()=>blk(10,32,24,24,'A')+blk(86,32,24,24,'B')+`<line class="dash" x1="35" y1="44" x2="52" y2="44"/><line class="dash" x1="68" y1="44" x2="85" y2="44"/>`+pin(60,44)},
+{g:5,en:'in front of',vi:'phía trước',d:()=>blk(38,14,44,28,'SHOP')+`<rect x="55" y="36" width="10" height="6" fill="#4C7099"/>`+pin(60,60)},
+{g:5,en:'behind / at the back of / to the rear of',vi:'phía sau',d:()=>pin(60,26)+blk(38,38,44,28,'SHOP')},
+{g:5,en:'on the left / on the right',vi:'bên trái / bên phải',d:()=>`<circle class="d" cx="76" cy="45" r="3.2"/>`+arw(66,45,38,45)+pin(28,45)},
+{g:5,en:'on the left-hand side / right-hand side',vi:'phía bên tay trái / tay phải',d:()=>`<rect class="rd" x="52" y="0" width="16" height="90"/><path class="rdc" d="M60,0 L60,90"/>`+dot('M60,86 L60,8',4)+`<text class="lblG" x="26" y="30">L</text>`+pin(34,50)},
+{g:5,en:'in the corner / in the far corner',vi:'ở góc / ở góc xa',d:()=>`<rect class="wall" x="10" y="8" width="100" height="6"/><rect class="wall" x="10" y="8" width="6" height="74"/>`+pin(27,27)},
+{g:5,en:'in the middle / in the centre of',vi:'ở giữa / trung tâm',d:()=>frame()+`<line class="dash" x1="60" y1="10" x2="60" y2="80"/><line class="dash" x1="12" y1="45" x2="108" y2="45"/>`+pin(60,45)},
+{g:5,en:'at the top / at the bottom',vi:'ở trên cùng / dưới cùng',d:()=>frame()+pin(60,20)+`<g opacity=".4">${pin(60,70)}</g>`},
+{g:5,en:'on the edge of / on the outskirts',vi:'ở rìa / vùng ngoại vi',d:()=>frame()+`<text class="lbl" x="52" y="48">TOWN</text>`+pin(108,45)},
+{g:5,en:'at the end of the road',vi:'ở cuối đường',d:()=>`<path class="rdl" d="M8,45 L82,45"/><path class="rdc" d="M8,45 L82,45"/><line x1="86" y1="35" x2="86" y2="55" stroke="#4C7099" stroke-width="2.5"/>`+pin(97,45)},
+{g:5,en:'at the far end / at the near end',vi:'ở đầu xa / ở đầu gần',d:()=>`<rect class="wall" x="8" y="30" width="104" height="4"/><rect class="wall" x="8" y="56" width="104" height="4"/>`+`<circle class="d" cx="16" cy="45" r="3"/>`+arw(26,45,86,45,'arm')+pin(102,45)},
+{g:5,en:'halfway along / halfway down',vi:'ở giữa đoạn đường',d:()=>`<path class="rdl" d="M8,45 L112,45"/><line class="dash" x1="10" y1="34" x2="10" y2="56"/><line class="dash" x1="110" y1="34" x2="110" y2="56"/>`+pin(60,45)+`<text class="lblG" x="60" y="72">½</text>`},
+{g:5,en:'just before / just after',vi:'ngay trước / ngay sau',d:()=>blk(51,28,20,26,'BANK')+`<path class="rdl" d="M8,70 L112,70"/>`+pin(41,62)+`<g opacity=".4">${pin(81,62)}</g>`},
+{g:5,en:'alongside',vi:'dọc sát bên',d:()=>`<rect class="w" x="0" y="12" width="120" height="22"/>`+waves(4,19,112,2)+route('M8,52 L112,52',4)+dot('M8,52 L112,52',4)},
+{g:5,en:'diagonal / diagonally opposite',vi:'chéo góc / đối diện chéo góc',d:()=>frame()+blk(15,13,22,17,'A')+blk(83,60,22,17,'B')+`<line class="dash" x1="37" y1="30" x2="83" y2="60" style="animation:hlp 2.2s infinite"/>`},
+{g:5,en:'overlooking the garden',vi:'nhìn ra khu vườn',d:()=>`<rect class="grn" x="14" y="56" width="92" height="26" rx="3"/><circle cx="30" cy="68" r="3.4" fill="#3E6B4F"/><circle cx="52" cy="72" r="3" fill="#3E6B4F"/><circle cx="88" cy="66" r="3.6" fill="#3E6B4F"/>`+blk(38,10,44,24,'HOTEL')+`<path class="dash" d="M50,34 L34,56" style="animation:hlp 2.4s infinite"/><path class="dash" d="M60,34 L60,56" style="animation:hlp 2.4s infinite .4s"/><path class="dash" d="M70,34 L88,56" style="animation:hlp 2.4s infinite .8s"/>`},
+{g:5,en:'attached to',vi:'gắn liền với',d:()=>blk(26,28,44,32,'HALL')+blk(70,38,24,22,'GYM')+`<line x1="70" y1="38" x2="70" y2="60" stroke="#E4B34A" stroke-width="1.6" style="animation:hlp 2.2s infinite"/>`},
+
+/* ---- G6: junctions & landmarks ---- */
+{g:6,en:'crossroads / intersection',vi:'ngã tư',d:()=>`<rect class="rd" x="0" y="38" width="120" height="15"/><rect class="rd" x="52" y="0" width="15" height="90"/><path class="rdc" d="M0,45.5 L120,45.5"/><path class="rdc" d="M59.5,0 L59.5,90"/>`+RING(60,45)+RING(60,45,1.1)},
+{g:6,en:'junction',vi:'giao lộ',d:()=>`<path class="rdl" d="M60,45 L12,80"/><path class="rdl" d="M60,45 L108,80"/><path class="rdl" d="M60,45 L60,10"/>`+RING(60,45)},
+{g:6,en:'T-junction',vi:'ngã ba chữ T',d:()=>`<rect class="rd" x="0" y="26" width="120" height="15"/><rect class="rd" x="52" y="41" width="15" height="49"/><path class="rdc" d="M0,33.5 L120,33.5"/><path class="rdc" d="M59.5,41 L59.5,90"/>`+RING(60,36)},
+{g:6,en:'fork in the path',vi:'chỗ lối đi rẽ đôi',d:()=>`<path class="rdl" d="M10,45 L52,45"/><path class="rdl" d="M52,45 L108,18"/><path class="rdl" d="M52,45 L108,72"/>`+dot('M10,45 L52,45 L106,19',4.2)+`<text class="qm" x="56" y="34">?</text>`},
+{g:6,en:'roundabout',vi:'vòng xuyến',d:()=>`<circle class="rdl" cx="60" cy="45" r="18"/><path class="rdl" d="M8,45 L40,45"/><path class="rdl" d="M80,45 L112,45"/><path class="rdl" d="M60,6 L60,25"/><path class="rdl" d="M60,65 L60,84"/>`+dot('M8,45 L42,45 A18,18 0 1 0 60,27 L60,8',5.2)},
+{g:6,en:'bend / curve in the road',vi:'khúc cua',d:()=>`<path class="rdl" d="M10,74 Q60,74 60,45 Q60,16 110,16"/><path class="rdc" d="M10,74 Q60,74 60,45 Q60,16 110,16"/>`+dot('M10,74 Q60,74 60,45 Q60,16 110,16',4.4)},
+{g:6,en:'corner (street corner)',vi:'góc đường',d:()=>`<rect class="rd" x="0" y="58" width="86" height="14"/><rect class="rd" x="72" y="0" width="14" height="72"/>`+blk(30,20,28,24,'SHOP')+pin(66,52)},
+{g:6,en:'footbridge',vi:'cầu đi bộ',d:()=>`<rect class="w" x="0" y="52" width="120" height="22"/>`+waves(4,58,112,2)+`<path d="M22,58 Q60,20 98,58" stroke="#3A5A80" stroke-width="6" fill="none"/><path class="dash" d="M22,52 Q60,14 98,52"/>`+dot('M22,55 Q60,18 98,55',4.2,0,2.6)},
+{g:6,en:'footpath / walkway',vi:'lối đi bộ',d:()=>`<path class="dash" d="M8,78 C36,66 44,34 70,30 S104,22 112,14" stroke-width="2"/>`+dot('M8,78 C36,66 44,34 70,30 S104,22 112,14',5,0,2.6)},
+{g:6,en:'signpost',vi:'biển chỉ đường',d:()=>`<g class="sway"><line x1="60" y1="26" x2="60" y2="78" stroke="#4C7099" stroke-width="3"/><path d="M60,28 h30 l7,6 l-7,6 h-30 z" fill="#1B3757" stroke="#E4B34A" stroke-width="1"/><text class="bt" x="76" y="36.5">PARK →</text><path d="M60,46 h-30 l-7,6 l7,6 h30 z" fill="#1B3757" stroke="#E4B34A" stroke-width="1"/><text class="bt" x="44" y="54.5">← LAKE</text></g>`},
+{g:6,en:'entrance / exit',vi:'lối vào / lối ra',d:()=>frame()+`<rect x="8" y="38" width="4" height="15" fill="#081627"/><rect x="108" y="38" width="4" height="15" fill="#081627"/>`+arw(0,45,26,45)+arw(94,45,120,45)+`<text class="lbl" x="30" y="30">IN</text><text class="lbl" x="90" y="30">OUT</text>`},
+
+/* ---- G7: distractors ---- */
+{g:7,en:"It used to be…, but it's now been moved to…",vi:'trước đây ở…, nhưng nay đã chuyển đến…',d:()=>`<g class="oldp">${pin(30,26)}${X(30,26)}</g><path class="dash" d="M40,32 Q66,38 76,52"/><g class="newp">${pin(86,60)}</g>`},
+{g:7,en:"You might think it's…, but actually…",vi:'bạn có thể nghĩ là…, nhưng thực ra…',d:()=>gpin(32,45)+`<path class="dash" d="M44,45 L70,45"/><g class="newp">${pin(84,45)}${CK(98,32)}</g>`},
+{g:7,en:'not the first…, but the second',vi:'không phải cái thứ nhất, mà là cái thứ hai',d:()=>`<path class="rdl" d="M4,70 L116,70"/><path class="rdl" d="M40,70 L40,18"/><path class="rdl" d="M84,70 L84,18"/>`+X(40,32)+CK(84,32)+dot('M6,70 L84,70 L84,20',4.6)},
+{g:7,en:'originally / previously / formerly',vi:'vốn dĩ / trước kia (thông tin cũ sắp bị thay thế)',d:()=>`<g class="oldp">${gpin(30,45)}</g><text class="lbl" x="30" y="70">CŨ</text>`+arw(44,45,68,45,'arm')+`<g class="newp">${pin(86,45)}</g><text class="lbl" x="86" y="70">MỚI</text>`},
+{g:7,en:'instead / rather than',vi:'thay vào đó',d:()=>blk(46,10,24,18,'A')+blk(72,58,24,18,'B')+`<circle class="d" cx="16" cy="76" r="3"/>`+`<g class="oldp"><path class="dash" d="M22,72 L50,32"/>${X(52,38)}</g><path class="dash" d="M22,76 Q54,80 70,68" style="animation:hlp 2.2s infinite"/><g class="newp">${CK(64,50)}</g>`},
+{g:7,en:"Don't go past… — that's the wrong way",vi:'đừng đi quá…, đó là sai đường',d:()=>`<rect x="70" y="30" width="7" height="30" fill="#1B3757" stroke="#E2654A" stroke-width="1.4"/><line x1="70" y1="36" x2="77" y2="42" stroke="#E2654A" stroke-width="1.4"/><line x1="70" y1="48" x2="77" y2="54" stroke="#E2654A" stroke-width="1.4"/>`+X(73.5,20)+dot('M10,45 L64,45 L10,45',5)+`<path class="dash" d="M10,45 L64,45"/>`}
+];
+
+/* ============ IPA (British RP), same order as ITEMS ============ */
+const IPA=[
+/* G1 */
+'/nɔːθ/','/saʊθ/','/iːst/','/west/','/ˌnɔːθˈiːst/','/ˌnɔːθˈwest/','/ˌsaʊθˈiːst/','/ˌsaʊθˈwest/',
+/* G2 */
+'/ɪn ðə ˈnɔːθ əv/','/tə ðə ˈnɔːθ əv/','/ɪn ðə ˈnɔːðən ˈsekʃən/','/ət ðə ˈsʌðən end/','/ðə ˈwestənməʊst ˈbɪldɪŋ/','/ˌdjuː ˈnɔːθ/',
+/* G3 */
+'/əz juː kʌm ˈɪn/ · /ˈentə/','/ət ði ˈentrəns/','/frəm weə jɔː ˈstændɪŋ/','/ˈstɑːtɪŋ frəm ðə rɪˈsepʃən/ · /ˈkɑː pɑːk/',
+/* G4 */
+'/ɡəʊ ˌstreɪt əˈhed/','/tɜːn ˈleft/ · /tɜːn ˈraɪt/','/teɪk ðə ˈsekənd ˈtɜːnɪŋ ɒn ðə ˈleft/','/ɡəʊ ˈpɑːst/','/ɡəʊ əˈlɒŋ/','/ˈfɒləʊ ðə ˈpɑːθ/ · /ˈkɒrɪdɔː/','/krɒs ðə ˈbrɪdʒ/','/ɡəʊ ˈθruː ðə ˈɡeɪt/','/ɡəʊ əˈraʊnd/','/kənˈtɪnjuː ənˈtɪl juː ˈriːtʃ/','/dʒʌst bɪˈjɒnd/','/ˈklɒkwaɪz/','/ˌæntiˈklɒkwaɪz/','/teɪk ə ˈleft/',
+/* G5 */
+'/ˈnekst tə/ · /bɪˈsaɪd/ · /əˈdʒeɪsənt tə/','/ˈɒpəzɪt/ · /əˈkrɒs frəm/ · /ˈfeɪsɪŋ/','/bɪˈtwiːn/','/ɪn ˈfrʌnt əv/','/bɪˈhaɪnd/ · /ət ðə ˈbæk əv/','/ɒn ðə ˈleft/ · /ɒn ðə ˈraɪt/','/ˌleft hænd ˈsaɪd/','/ɪn ðə ˈkɔːnə/','/ɪn ðə ˈmɪdl/ · /ˈsentə/','/ət ðə ˈtɒp/ · /ət ðə ˈbɒtəm/','/ɒn ði ˈedʒ əv/ · /ˈaʊtskɜːts/','/ət ði ˈend əv ðə ˈrəʊd/','/ət ðə ˌfɑːr ˈend/','/ˌhɑːfˈweɪ əˈlɒŋ/','/dʒʌst bɪˈfɔː/ · /dʒʌst ˈɑːftə/','/əˌlɒŋˈsaɪd/','/daɪˌæɡənəli ˈɒpəzɪt/','/ˌəʊvəˈlʊkɪŋ/','/əˈtætʃt tə/',
+/* G6 */
+'/ˈkrɒsrəʊdz/ · /ˌɪntəˈsekʃən/','/ˈdʒʌŋkʃən/','/ˈtiː ˌdʒʌŋkʃən/','/ˈfɔːk ɪn ðə ˈpɑːθ/','/ˈraʊndəbaʊt/','/bend/ · /kɜːv/','/ˈkɔːnə/','/ˈfʊtbrɪdʒ/','/ˈfʊtpɑːθ/ · /ˈwɔːkweɪ/','/ˈsaɪnpəʊst/','/ˈentrəns/ · /ˈeksɪt/',
+/* G7 */
+'/ɪt ˌjuːst tə ˈbiː/ … /ˈmuːvd tə/','/juː maɪt ˈθɪŋk/ … /ˈæktʃuəli/','/nɒt ðə ˈfɜːst bət ðə ˈsekənd/','/əˈrɪdʒənəli/ · /ˈpriːviəsli/ · /ˈfɔːməli/','/ɪnˈsted/ · /ˈrɑːðə ðən/','/dəʊnt ɡəʊ ˈpɑːst/'
+];
+
+/* ============ Render ============ */
+const content = document.getElementById('content');
+const counts = {};
+ITEMS.forEach(it=>counts[it.g]=(counts[it.g]||0)+1);
+
+let html='';
+for(let g=1; g<=7; g++){
+  const gi=GROUPS[g];
+  html+=`<section class="gsec" data-g="${g}">
+    <h2 class="gtitle ${g===7?'warn':''}"><span class="co">NHÓM 0${g}</span>${gi.name} <span class="co">· ${gi.en}</span></h2>
+    <p class="gsub">${gi.sub}</p>
+    <div class="grid">`;
+  let n=0;
+  ITEMS.forEach((it,i)=>{
+    if(it.g!==g) return;
+    n++;
+    const coord='ABCDEFG'[g-1]+'·'+String(n).padStart(2,'0');
+    const say=it.en.replace(/\s*\/\s*/g,', ').replace(/…/g,'').replace(/[—-]\s*$/,'');
+    const ipa=IPA[i]||'';
+    html+=`<article class="card g${g}" data-g="${g}" data-s="${(it.en+' '+it.vi+' '+ipa).toLowerCase()}">
+      <div class="map">${demo(it.d())}<span class="coord">${coord}</span></div>
+      <div class="tx">
+        <h3 class="en">${it.en}
+          <button class="spk" data-say="${say.replace(/"/g,'&quot;')}" aria-label="Phát âm ${say.replace(/"/g,'&quot;')}" title="Nghe phát âm">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          </button>
+        </h3>
+        <p class="ipa">${ipa}</p>
+        <p class="vi">${it.vi}</p>
+      </div>
+    </article>`;
+  });
+  html+=`</div></section>`;
+}
+content.innerHTML=html;
+
+/* ============ Tabs ============ */
+const tabsEl=document.getElementById('tabs');
+const tabDefs=[['all','Tất cả',ITEMS.length]];
+for(let g=1;g<=7;g++) tabDefs.push([g,GROUPS[g].name,counts[g]]);
+tabDefs.forEach(([id,name,c],i)=>{
+  const b=document.createElement('button');
+  b.className='tab'+(id===7?' t7':'')+(i===0?' on':'');
+  b.dataset.f=id;
+  b.innerHTML=`${name}<span class="n">${c}</span>`;
+  tabsEl.insertBefore(b, tabsEl.querySelector('.search'));
+});
+let curFilter='all';
+document.addEventListener('click',function(e){
+  const b=e.target.closest('.tab'); if(!b) return;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  b.classList.add('on');
+  curFilter=b.dataset.f;
+  applyFilter();
+},false);
+
+/* ============ Search ============ */
+const q=document.getElementById('q');
+q.addEventListener('input',applyFilter);
+
+function applyFilter(){
+  const kw=q.value.trim().toLowerCase();
+  let visible=0;
+  document.querySelectorAll('.gsec').forEach(sec=>{
+    const g=sec.dataset.g;
+    let secVisible=0;
+    sec.querySelectorAll('.card').forEach(c=>{
+      const okG = curFilter==='all' || String(g)===String(curFilter);
+      const okK = !kw || c.dataset.s.includes(kw);
+      const show = okG && okK;
+      c.classList.toggle('hidden',!show);
+      if(show){secVisible++;visible++;}
+    });
+    sec.classList.toggle('hidden',secVisible===0);
+  });
+  document.getElementById('empty').style.display = visible? 'none':'block';
+}
+
+/* ============ Scroll reveal ============ */
+try{
+  if(!RM && 'IntersectionObserver' in window){
+    const io=new IntersectionObserver(es=>{
+      es.forEach((e)=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:.12,rootMargin:'0px 0px -30px 0px'});
+    document.querySelectorAll('.card').forEach((c,i)=>{
+      c.style.transitionDelay=(i%4)*70+'ms';
+      io.observe(c);
+    });
+  }else{
+    document.querySelectorAll('.card').forEach(c=>c.classList.add('in'));
+  }
+}catch(e){
+  document.querySelectorAll('.card').forEach(c=>c.classList.add('in'));
+}
+
+/* ============ TTS (tap the speaker button OR anywhere on a card) ============ */
+let enVoice=null;
+function pickVoice(){
+  try{
+    const vs=speechSynthesis.getVoices();
+    enVoice=vs.find(v=>/en[-_]GB/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang))||null;
+  }catch(e){}
+}
+if('speechSynthesis' in window){
+  pickVoice();
+  try{ speechSynthesis.onvoiceschanged=pickVoice; }catch(e){}
+}
+function toast(msg){
+  let t=document.getElementById('toast');
+  if(!t){
+    t=document.createElement('div'); t.id='toast';
+    t.style.cssText='position:fixed;left:50%;bottom:26px;transform:translateX(-50%);background:#122B4C;color:#F2EBDB;border:1px solid #E4B34A;border-radius:12px;padding:11px 18px;font-family:var(--body);font-size:14px;z-index:99;max-width:88vw;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.5);transition:opacity .4s;';
+    document.body.appendChild(t);
+  }
+  t.textContent=msg; t.style.opacity='1';
+  clearTimeout(t._h); t._h=setTimeout(()=>{t.style.opacity='0';},2600);
+}
+function speak(text,btn){
+  if(!('speechSynthesis' in window)){
+    toast('Trình duyệt này không hỗ trợ phát âm — hãy mở file bằng Chrome hoặc Safari nhé.');
+    return;
+  }
+  try{
+    speechSynthesis.cancel();
+    const u=new SpeechSynthesisUtterance(text);
+    u.lang='en-GB'; u.rate=.92;
+    if(enVoice) u.voice=enVoice;
+    document.querySelectorAll('.spk.on').forEach(x=>x.classList.remove('on'));
+    if(btn){ btn.classList.add('on'); u.onend=()=>btn.classList.remove('on'); }
+    speechSynthesis.speak(u);
+  }catch(e){
+    toast('Không phát âm được trên trình duyệt này — thử mở bằng Chrome/Safari.');
+  }
+}
+document.addEventListener('click',function(e){
+  const b=e.target.closest('.spk');
+  if(b){ speak(b.dataset.say,b); return; }
+  const card=e.target.closest('.card');
+  if(card){
+    const btn=card.querySelector('.spk');
+    if(btn) speak(btn.dataset.say,btn);
+  }
+},false);
+
+/* ============ Font size ============ */
+let fs=1;
+function setFs(v){
+  fs=Math.min(1.5,Math.max(.8,v));
+  document.documentElement.style.setProperty('--fs',fs);
+}
+document.addEventListener('click',function(e){
+  if(e.target.closest('#fPlus')) setFs(fs+.08);
+  else if(e.target.closest('#fMinus')) setFs(fs-.08);
+},false);
+
+/* ============ Hero compass ticks ============ */
+(function(){
+  const t=document.getElementById('heroTicks'), l=document.getElementById('heroLabels');
+  let ts='';
+  for(let i=0;i<32;i++){
+    const a=i*11.25*Math.PI/180, r=96, r1=i%8===0?85:(i%4===0?89:92);
+    ts+=`<line class="tk${i%8===0?' tk2':''}" x1="${(110+Math.sin(a)*r1).toFixed(1)}" y1="${(110-Math.cos(a)*r1).toFixed(1)}" x2="${(110+Math.sin(a)*r).toFixed(1)}" y2="${(110-Math.cos(a)*r).toFixed(1)}"/>`;
+  }
+  t.innerHTML=ts;
+  l.innerHTML=[['N',0],['NE',45],['E',90],['SE',135],['S',180],['SW',225],['W',270],['NW',315]].map(([n,a])=>{
+    const ra=a*Math.PI/180, rr=n.length>1?70:72;
+    return `<text class="cl" style="font-size:${n.length>1?9:13}px" x="${(110+Math.sin(ra)*rr).toFixed(1)}" y="${(110-Math.cos(ra)*rr+4).toFixed(1)}">${n}</text>`;
+  }).join('');
+})();
+</script>
+</body>
+</html>
