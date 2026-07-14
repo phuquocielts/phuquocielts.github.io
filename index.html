@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PoPoDoo English &amp; IELTS — Kho bài học</title>
+<title>English High School &amp; IELTS Phú Quốc — Resource Library</title>
 <style>
   :root{
     --navy-deep:#081633;
@@ -40,30 +40,6 @@
   h1 b{color:var(--gold-bright);font-weight:normal;}
   .brand-sub{color:var(--ink-dim);font-size:.85rem;margin-top:8px;}
   .brand-sub a{color:var(--ink-dim);text-decoration:none;}
-
-  /* ===== Toolbar ===== */
-  .toolbar{
-    display:flex;gap:10px;align-items:center;margin:22px 0 6px;flex-wrap:wrap;
-  }
-  .search{
-    flex:1;min-width:200px;position:relative;
-  }
-  .search input{
-    width:100%;padding:11px 14px 11px 38px;border-radius:10px;
-    border:1px solid var(--navy-line);background:var(--navy-card);
-    color:var(--ink);font-size:.95rem;outline:none;
-  }
-  .search input:focus{border-color:var(--gold);}
-  .search::before{
-    content:"⌕";position:absolute;left:13px;top:50%;transform:translateY(-56%);
-    color:var(--gold);font-size:1.2rem;
-  }
-  .fontbtns{display:flex;gap:6px;}
-  .fontbtns button{
-    width:38px;height:38px;border-radius:9px;border:1px solid var(--navy-line);
-    background:var(--navy-card);color:var(--gold-bright);font-size:.95rem;cursor:pointer;
-  }
-  .fontbtns button:hover{border-color:var(--gold);}
 
   /* ===== Tree ===== */
   .repo{margin-top:26px;}
@@ -136,27 +112,52 @@
 <div class="wrap">
 
   <header>
-    <div class="brand-eyebrow">PoPoDoo English &amp; IELTS</div>
-    <h1>Kho bài học <b>N.D.N</b></h1>
-    <div class="brand-sub">Thầy Andy — Nguyễn Duy Nhất · <a href="tel:0932067877">0932 067 877</a></div>
+    <div class="brand-eyebrow">English High School &amp; IELTS Phú Quốc</div>
+    <h1>Resource Library</h1>
   </header>
-
-  <div class="toolbar">
-    <div class="search">
-      <input id="q" type="text" placeholder="Tìm bài học..." aria-label="Tìm bài học">
-    </div>
-    <div class="fontbtns">
-      <button id="fminus" title="Giảm cỡ chữ" aria-label="Giảm cỡ chữ">A−</button>
-      <button id="fplus" title="Tăng cỡ chữ" aria-label="Tăng cỡ chữ">A+</button>
-    </div>
-  </div>
 
   <div id="repos"></div>
   <div id="status" class="note">Đang tải danh sách bài học…</div>
 
   <footer>
-    Trang tự cập nhật theo kho bài trên GitHub — thêm bài mới là tự hiện, không cần sửa trang.<br>
-    © PoPoDoo English &amp; IELTS
+    <div style="font-family:'Times New Roman',Georgia,serif; font-size:1rem; color:var(--ink);">
+      N.D.N <span style="color:var(--gold);">·</span> 25+ năm kinh nghiệm
+      <span style="color:var(--gold);">·</span> 0932 067 877
+    </div>
+    <div style="display:flex;justify-content:center;gap:14px;margin:14px 0;">
+      <!-- Gọi -->
+      <a href="tel:0932067877" aria-label="Gọi điện" title="Gọi 0932 067 877"
+         style="display:inline-flex;align-items:center;justify-content:center;
+                width:42px;height:42px;border-radius:50%;
+                background:linear-gradient(180deg,#f0c75e,#d4af37);
+                box-shadow:0 3px 10px rgba(212,175,55,.3);">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="#081633" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+      </a>
+      <!-- Zalo -->
+      <a href="https://zalo.me/0932067877" target="_blank" rel="noopener" aria-label="Zalo" title="Chat Zalo"
+         style="display:inline-flex;align-items:center;justify-content:center;
+                width:42px;height:42px;border-radius:50%;
+                background:var(--navy-card);border:1.5px solid var(--gold);">
+        <svg width="26" height="26" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <text x="24" y="31" text-anchor="middle"
+                font-family="Arial, sans-serif" font-size="15" font-weight="bold"
+                fill="#f0c75e">Zalo</text>
+        </svg>
+      </a>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/profile.php?id=100083129512397" target="_blank" rel="noopener"
+         aria-label="Facebook" title="Facebook"
+         style="display:inline-flex;align-items:center;justify-content:center;
+                width:42px;height:42px;border-radius:50%;
+                background:var(--navy-card);border:1.5px solid var(--gold);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#f0c75e" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.026 1.792-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.931-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+        </svg>
+      </a>
+    </div>
+    65 Lý Thường Kiệt, Dương Đông, Phú Quốc, An Giang
   </footer>
 </div>
 
@@ -177,15 +178,6 @@ const CACHE_MIN = 10; // phút
 const $repos = document.getElementById("repos");
 const $status = document.getElementById("status");
 
-/* ---- Cỡ chữ A− / A+ ---- */
-let fs = parseInt(localStorage.getItem("popodoo_home_fs_v1") || "16", 10);
-applyFs();
-document.getElementById("fplus").onclick = () => { fs = Math.min(fs + 1, 22); applyFs(); };
-document.getElementById("fminus").onclick = () => { fs = Math.max(fs - 1, 13); applyFs(); };
-function applyFs(){
-  document.documentElement.style.setProperty("--fs", fs + "px");
-  localStorage.setItem("popodoo_home_fs_v1", String(fs));
-}
 
 /* ---- Tên hiển thị đẹp từ tên file ---- */
 function prettyName(name){
@@ -290,16 +282,6 @@ function fileLi(repo, folder, file){
   return li;
 }
 
-/* ---- Tìm kiếm ---- */
-document.getElementById("q").addEventListener("input", e => {
-  const q = e.target.value.trim().toLowerCase();
-  document.querySelectorAll("a.lesson").forEach(a => {
-    a.parentElement.classList.toggle("hidden", q && !a.dataset.q.includes(q));
-  });
-  document.querySelectorAll(".repo").forEach(sec => {
-    if(q) sec.classList.add("open");
-  });
-});
 
 /* ---- Khởi động: cache trước, API sau ---- */
 (async function init(){
