@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Đăng ký làm bài · English Class</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --indigo:#4F46E5;
+    --purple:#7C3AED;
+    --cyan:#06B6D4;
+    --amber:#F59E0B;
+    --emerald:#10B981;
+    --ink:#0F172A;
+    --slate:#64748B;
+    --line:#E2E8F0;
+    --bg:#F8FAFC;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Be Vietnam Pro',sans-serif;
+    color:var(--ink);
+    min-height:100vh;
+    display:flex;align-items:center;justify-content:center;
+    padding:24px;
+    background:radial-gradient(1200px 600px at 10% -10%,#EEF2FF 0%,transparent 60%),
+               radial-gradient(1000px 600px at 110% 10%,#F5F3FF 0%,transparent 55%),
+               var(--bg);
+  }
+  .card{
+    width:100%;max-width:440px;background:#fff;border-radius:28px;
+    box-shadow:0 20px 60px -20px rgba(79,70,229,.35),0 4px 12px rgba(15,23,42,.05);
+    padding:36px 32px 32px;position:relative;overflow:hidden;
+    animation:pop .5s cubic-bezier(.2,.8,.2,1) both;
+  }
+  @keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:linear-gradient(90deg,var(--indigo),var(--purple));
+    color:#fff;font-family:'Poppins';font-weight:700;font-size:13px;
+    padding:8px 14px;border-radius:999px;letter-spacing:.3px;
+  }
+  h1{font-family:'Poppins';font-weight:800;font-size:28px;line-height:1.15;margin:18px 0 6px}
+  .sub{color:var(--slate);font-size:15px;margin-bottom:26px}
+  label{display:block;font-weight:600;font-size:14px;margin:0 0 8px 2px}
+  .field{margin-bottom:20px}
+  .input-wrap{position:relative}
+  .input-wrap svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--slate)}
+  input{
+    width:100%;font-family:'Be Vietnam Pro';font-size:15px;
+    padding:15px 16px 15px 46px;border:2px solid var(--line);border-radius:16px;
+    background:#fff;transition:.18s;outline:none;
+  }
+  input:focus{border-color:var(--indigo);box-shadow:0 0 0 4px rgba(79,70,229,.12)}
+  input:focus + .icon{color:var(--indigo)}
+  button{
+    width:100%;font-family:'Poppins';font-weight:700;font-size:16px;color:#fff;
+    border:none;border-radius:16px;padding:16px;cursor:pointer;margin-top:6px;
+    background:linear-gradient(90deg,var(--indigo),var(--purple));
+    box-shadow:0 10px 24px -8px rgba(124,58,237,.6);transition:.18s;
+  }
+  button:hover{transform:translateY(-2px);box-shadow:0 16px 30px -10px rgba(124,58,237,.7)}
+  button:active{transform:translateY(0)}
+  .foot{text-align:center;color:var(--slate);font-size:12.5px;margin-top:18px}
+  .hp{position:absolute;left:-9999px}
+  /* success */
+  .success{text-align:center;display:none;animation:pop .4s both}
+  .success.show{display:block}
+  .form-box.hide{display:none}
+  .check{
+    width:80px;height:80px;border-radius:50%;margin:6px auto 18px;
+    background:linear-gradient(135deg,var(--emerald),var(--cyan));
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 12px 30px -8px rgba(16,185,129,.6);
+  }
+  .check svg{width:40px;height:40px;color:#fff}
+  .success h2{font-family:'Poppins';font-weight:800;font-size:24px;margin-bottom:8px}
+  .success p{color:var(--slate);font-size:15px}
+  .success b{color:var(--indigo)}
+</style>
+</head>
+<body>
+  <div class="card">
+    <!-- ĐĂNG KÝ -->
+    <div class="form-box" id="formBox">
+      <span class="badge">✏️ English Class</span>
+      <h1>Đăng ký làm bài</h1>
+      <p class="sub">Điền tên và email để bắt đầu. Easy! 🚀</p>
+
+      <form action="https://formspree.io/f/xykvbojg" method="POST" id="regForm">
+        <p class="hp"><label>Đừng điền ô này: <input name="_gotcha" /></label></p>
+
+        <div class="field">
+          <label for="hoten">Họ và tên</label>
+          <div class="input-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            <input type="text" id="hoten" name="ho-ten" placeholder="Nguyễn Văn A" required autocomplete="name" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <div class="input-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/></svg>
+            <input type="email" id="email" name="email" placeholder="ban@email.com" required autocomplete="email" />
+          </div>
+        </div>
+
+        <button type="submit">Bắt đầu làm bài →</button>
+      </form>
+      <p class="foot">🔒 Thông tin của bạn được bảo mật</p>
+    </div>
+
+    <!-- THÀNH CÔNG -->
+    <div class="success" id="successBox">
+      <div class="check">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <h2>Đăng ký thành công! 🎉</h2>
+      <p>Cảm ơn <b id="nameOut">bạn</b> đã đăng ký.<br>Chúc bạn làm bài thật tốt nhé!</p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('regForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = new FormData(form);
+      const showSuccess = () => {
+        document.getElementById('nameOut').textContent = data.get('ho-ten') || 'bạn';
+        document.getElementById('formBox').classList.add('hide');
+        document.getElementById('successBox').classList.add('show');
+      };
+      // Gửi dữ liệu về Formspree (AJAX, không rời trang)
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(showSuccess)
+      .catch(showSuccess);
+    });
+  </script>
+</body>
+</html>
