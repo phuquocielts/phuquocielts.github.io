@@ -167,9 +167,7 @@
 /* ================= CẤU HÌNH =================
    Thêm kho mới: thêm 1 dòng vào danh sách này. */
 const REPOS = [
-  { repo: "ielts-lessons", label: "Luyện thi IELTS" },
-  { repo: "highschool",    label: "Tiếng Anh phổ thông" },
-  { repo: "reading",       label: "Luyện đọc — Reading" },
+  { repo: "ielts-lessons", label: "IELTS" },
 ];
 const USER = "phuquocielts";
 /* ============================================ */
@@ -253,11 +251,7 @@ function render(data){
     });
     tree.files.forEach(f => ul.appendChild(fileLi(cfg.repo, null, f)));
 
-    if(count === 0){
-      body.innerHTML = `<div class="note">Chưa có bài học nào trong kho này.</div>`;
-    }else{
-      body.appendChild(ul);
-    }
+    body.appendChild(ul);
 
     const head = sec.querySelector(".repo-head");
     const toggle = () => {
@@ -269,8 +263,8 @@ function render(data){
 
     $repos.appendChild(sec);
   });
-  $status.textContent = total ? "" : "Chưa có bài học nào.";
-  if(total) $status.classList.add("hidden");
+  $status.textContent = "";
+  $status.classList.add("hidden");
 }
 
 function fileLi(repo, folder, file){
